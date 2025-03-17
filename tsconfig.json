@@ -12,6 +12,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
+    "checkJs": true,
     "jsx": "react-jsx",
 
     /* Linting */
