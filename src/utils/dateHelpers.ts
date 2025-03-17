@@ -4,7 +4,7 @@ import { ptBR, enUS } from "date-fns/locale";
 /**
  * Enum para definir os tipos de localidade suportadas.
  */
-enum LocaleType {
+export enum LocaleType {
   PT_BR = "ptBr",
   EN_US = "enUs",
 }
