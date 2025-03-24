@@ -1,3 +1,5 @@
 export * from './cn'
+export * from './httpClient'
 export * from './dateHelpers'
 export * from './stringHelpers'
+export * from './validationsHelpers'
