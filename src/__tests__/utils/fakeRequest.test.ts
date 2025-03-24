@@ -1,10 +1,14 @@
-import { fakeRequest } from "../httpClient";
-import { getHttpStatus, HttpStatus, MetaResponseType } from "@/@types/requestType";
+import { fakeRequest } from "../../utils/httpClient";
+import {
+  getHttpStatus,
+  HttpStatus,
+  MetaResponseType,
+} from "@/@types/requestType";
 
 describe("fakeRequest", () => {
   it("deve retornar os dados corretos", async () => {
     const data = { message: "Teste" };
-    
+
     const response = await fakeRequest({ data });
 
     expect(response.data).toEqual(data);

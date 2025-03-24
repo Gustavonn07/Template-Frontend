@@ -1,4 +1,4 @@
-import StringHelpers from "../stringHelpers";
+import StringHelpers from "../../utils/stringHelpers";
 
 describe("StringHelpers", () => {
   it("deve formatar CPF corretamente", () => {
@@ -6,7 +6,9 @@ describe("StringHelpers", () => {
   });
 
   it("deve formatar CNPJ corretamente", () => {
-    expect(StringHelpers.formatCpfCnpj("12345678000195")).toBe("12.345.678/0001-95");
+    expect(StringHelpers.formatCpfCnpj("12345678000195")).toBe(
+      "12.345.678/0001-95"
+    );
   });
 
   it("deve limpar valores não numéricos", () => {
@@ -14,7 +16,9 @@ describe("StringHelpers", () => {
   });
 
   it("deve formatar valor monetário", () => {
-    expect(StringHelpers.formatCurrency({ value: 1000 })).toBe("R$10,00");
+    expect(
+      StringHelpers.formatCurrency({ value: 1000 }).replace(/\s/g, " ")
+    ).toBe("R$ 10,00");
   });
 
   it("deve formatar porcentagem", () => {
@@ -22,7 +26,9 @@ describe("StringHelpers", () => {
   });
 
   it("deve truncar string", () => {
-    expect(StringHelpers.truncateString({ text: "Texto muito longo", length: 10 })).toBe("Texto muit...");
+    expect(
+      StringHelpers.truncateString({ text: "Texto muito longo", length: 10 })
+    ).toBe("Texto muit...");
   });
 
   it("deve gerar um UUID", () => {

@@ -1,4 +1,4 @@
-import DateHelpers, { LocaleType } from "../dateHelpers";
+import DateHelpers, { LocaleType } from "../../utils/dateHelpers";
 
 describe("formatDate", () => {
   it("deve formatar a data para o padrão dd/MM/yyyy por padrão", () => {

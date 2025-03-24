@@ -1,4 +1,4 @@
-import { ValidationsHelpers } from "../validationsHelpers";
+import { ValidationsHelpers } from "../../utils/validationsHelpers";
 
 describe("Validador de CPF", () => {
   it("deve validar CPFs corretos", () => {
@@ -17,14 +17,14 @@ describe("Validador de CPF", () => {
 
   it("deve invalidar CPFs incorretos", () => {
     const invalidCPFs = [
-      "123.456.789-00", 
-      "111.111.111-11", 
+      "123.456.789-00",
+      "111.111.111-11",
       "222.222.222-22",
-      "33333333333", 
-      "000.000.000-00", 
-      "529.982.247-24", 
-      "5299822472", 
-      "529982247256", 
+      "33333333333",
+      "000.000.000-00",
+      "529.982.247-24",
+      "5299822472",
+      "529982247256",
       "ABC.DEF.GHI-JK",
     ];
 
@@ -35,7 +35,6 @@ describe("Validador de CPF", () => {
 });
 
 describe("Validador de CNPJ", () => {
-
   it("deve validar CNPJs corretos", () => {
     const validCNPJs = [
       "11.727.608/0001-39",
@@ -52,13 +51,13 @@ describe("Validador de CNPJ", () => {
 
   it("deve invalidar CNPJs incorretos", () => {
     const invalidCNPJs = [
-      "11.222.333/0001-22", 
-      "00.000.000/0000-00", 
+      "11.222.333/0001-22",
+      "00.000.000/0000-00",
       "11.111.111/1111-11",
       "36.040.582/0001-08",
-      "3604058200010", 
-      "360405820001091", 
-      "ABC.DEF.GHI/JKLM-NO", 
+      "3604058200010",
+      "360405820001091",
+      "ABC.DEF.GHI/JKLM-NO",
     ];
 
     invalidCNPJs.forEach((cnpj) => {
@@ -66,4 +65,3 @@ describe("Validador de CNPJ", () => {
     });
   });
 });
-
