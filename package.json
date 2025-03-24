@@ -57,5 +57,16 @@
     "ts-jest": "^29.2.6",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run precommit"
+    }
+  },
+  "lint-staged": {
+    "**/*.{ts,tsx,js,jsx}": [
+      "eslint --fix",
+      "npm run test"
+    ]
   }
 }
