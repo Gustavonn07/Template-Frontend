@@ -70,7 +70,7 @@
   "lint-staged": {
     "**/*.{ts,tsx,js,jsx}": [
       "eslint --fix",
-      "npm run test-jest"
+      "npm run test-jest -- --passWithNoTests"
     ]
   }
 }
