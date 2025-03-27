@@ -1,13 +1,13 @@
 import { render } from "@testing-library/react";
-import { 
-  Breadcrumb, 
-  BreadcrumbList, 
-  BreadcrumbItem, 
-  BreadcrumbLink, 
-  BreadcrumbPage, 
-  BreadcrumbSeparator, 
-  BreadcrumbEllipsis 
-} from "../../components/ui"; 
+import {
+  Breadcrumb,
+  BreadcrumbList,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+  BreadcrumbEllipsis,
+} from "../../../components/ui";
 
 describe("Breadcrumb Component", () => {
   it("deve renderizar o Breadcrumb corretamente", () => {
@@ -26,7 +26,9 @@ describe("Breadcrumb Component", () => {
   });
 
   it("deve renderizar um BreadcrumbLink corretamente", () => {
-    const { getByRole } = render(<BreadcrumbLink href="/home">Home</BreadcrumbLink>);
+    const { getByRole } = render(
+      <BreadcrumbLink href="/home">Home</BreadcrumbLink>
+    );
     expect(getByRole("link")).toHaveAttribute("href", "/home");
   });
 

@@ -1,4 +1,4 @@
-import { ValidationsHelpers } from "../../utils/validationsHelpers";
+import { ValidationsHelpers } from "../../utils/helpers/validationsHelpers";
 
 describe("Validador de CPF", () => {
   it("deve validar CPFs corretos", () => {

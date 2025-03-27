@@ -4,7 +4,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "../../../components/ui";
+} from "../../../../components/ui";
 import userEvent from "@testing-library/user-event";
 
 describe("Funções do Componente Accordion", () => {

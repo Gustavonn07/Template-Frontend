@@ -1,4 +1,4 @@
-import { useAuth } from '@/contexts'
+import { useAuth } from '../../contexts'
 import { Navigate, Outlet } from 'react-router-dom'
 
 export const PrivateRoutes = () => {

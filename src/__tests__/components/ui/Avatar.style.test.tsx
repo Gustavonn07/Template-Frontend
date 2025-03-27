@@ -1,5 +1,5 @@
 import { render, screen, waitFor } from "@testing-library/react";
-import { Avatar, AvatarImage, AvatarFallback } from "../../components/ui";
+import { Avatar, AvatarImage, AvatarFallback } from "../../../components/ui";
 
 const AvatarComponent = () => {
   return (

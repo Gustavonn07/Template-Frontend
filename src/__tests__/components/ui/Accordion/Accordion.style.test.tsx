@@ -4,7 +4,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "../../../components/ui";
+} from "../../../../components/ui";
 
 const AccordionComponent = ({ disabled }: { disabled: boolean }) => {
   return (

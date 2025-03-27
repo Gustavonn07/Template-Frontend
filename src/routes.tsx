@@ -1,17 +1,18 @@
 import { createBrowserRouter, RouteObject } from "react-router-dom";
 import { MainLayout } from "./layout";
 import { Home } from "./pages";
+import { PrivateRoutes } from "./components";
 
 const privateRoutes: RouteObject[] = [
   {
     element: <MainLayout />,
     children: [
       {
-        path: "/",
+        path: "/private",
         element: <div>ROTA_PRIVADA</div>,
       },
     ],
-  }
+  },
 ];
 
 const publicRoutes: RouteObject[] = [
@@ -20,7 +21,7 @@ const publicRoutes: RouteObject[] = [
     children: [
       {
         path: "/",
-        element:  <Home />,
+        element: <Home />,
       },
     ],
   },
@@ -32,10 +33,10 @@ const publicRoutes: RouteObject[] = [
 
 const routesList: RouteObject[] = [
   {
-    element: <div>PRIVATE_ROUTES</div>,
-    children: privateRoutes
+    element: <PrivateRoutes />,
+    children: privateRoutes,
   },
-  ...publicRoutes
-]
+  ...publicRoutes,
+];
 
-export const routes = createBrowserRouter(routesList)
+export const routes = createBrowserRouter(routesList);

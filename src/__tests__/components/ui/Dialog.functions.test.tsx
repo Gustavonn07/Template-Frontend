@@ -7,7 +7,7 @@ import {
   DialogTitle,
   DialogDescription,
   DialogClose,
-} from "../../components";
+} from "../../../components";
 
 describe("Dialog Component", () => {
   it("deve renderizar o trigger corretamente", () => {

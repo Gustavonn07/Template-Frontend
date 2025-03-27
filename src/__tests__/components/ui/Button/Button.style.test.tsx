@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import { Button } from "../../../components/ui"; 
+import { Button } from "../../../../components/ui";
 
 describe("Estilo do Componente Button", () => {
   it("renderiza o botão com o texto correto", () => {

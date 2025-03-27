@@ -1,4 +1,4 @@
-import { getHttpStatus, HttpStatus, MetaResponseType } from "@/@types/requestType";
+import { getHttpStatus, HttpStatus, MetaResponseType } from "../@types";
 import { AxiosResponse } from "axios";
 
 /**
@@ -45,4 +45,3 @@ export function fakeRequest<T>({
   });
   return response as Promise<AxiosResponse<T> & { meta?: MetaResponseType }>;
 }
-

@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { Button } from "../../../components/ui";
-import { cn } from "../../../utils";
+import { Button } from "../../../../components/ui";
+import { cn } from "../../../../utils";
 
 describe("Funcionalidades do Componente Button", () => {
   it("dispara evento de clique", async () => {
@@ -18,13 +18,13 @@ describe("Funcionalidades do Componente Button", () => {
     const CustomComponent = ({ children }: { children: React.ReactNode }) => (
       <span>{children}</span>
     );
-  
+
     const { getByText } = render(
       <Button asChild>
         <CustomComponent>Conteúdo customizado</CustomComponent>
       </Button>
     );
-  
+
     expect(getByText("Conteúdo customizado")).toBeInTheDocument();
   });
 

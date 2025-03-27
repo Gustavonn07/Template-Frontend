@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import { Heading, HeadingProps } from "@/components";
+import { Heading, HeadingProps } from "../components";
 
 export type mainLayoutContext = {
   setHead: React.Dispatch<React.SetStateAction<HeadingProps>>;

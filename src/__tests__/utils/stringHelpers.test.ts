@@ -1,4 +1,4 @@
-import StringHelpers from "../../utils/stringHelpers";
+import StringHelpers from "../../utils/helpers/stringHelpers";
 
 describe("StringHelpers", () => {
   it("deve formatar CPF corretamente", () => {
