@@ -7,6 +7,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "../../components";
+import toast from "react-hot-toast";
 
 export const Home = () => {
   const { setHead } = useOutletContext<mainLayoutContext>();
@@ -25,6 +26,8 @@ export const Home = () => {
           </TooltipContent>
         </Tooltip>
       </TooltipProvider>
+
+      <button onClick={() => toast("Hello World")}>Click</button>
     </div>
   );
 };

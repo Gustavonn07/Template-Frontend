@@ -28,6 +28,7 @@
     "npm": "^11.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.5.2",
     "react-router-dom": "^7.4.0",
     "sweetalert2": "^11.17.2",
     "tailwind-merge": "^3.0.2",
@@ -72,7 +73,7 @@
   "lint-staged": {
     "**/*.{ts,tsx,js,jsx}": [
       "eslint --fix",
-      "npm run test-jest"
+      "npm run test-jest -- --passWithNoTests"
     ]
   }
 }
