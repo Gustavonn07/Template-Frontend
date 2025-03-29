@@ -1,20 +1,30 @@
 import React from "react";
 import { useOutletContext } from "react-router-dom";
 import { mainLayoutContext } from "@/layout";
-import { useTranslation } from "react-i18next";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "../../components";
 
 export const Home = () => {
   const { setHead } = useOutletContext<mainLayoutContext>();
-  const { t } = useTranslation()
 
   React.useEffect(() => {
     setHead({ title: "HOME" });
   }, [setHead]);
 
-
   return (
-    <div className="flex gap-2">
-      {t('global.hello')}
+    <div className="w-full bg-red-200 flex justify-center">
+      <TooltipProvider>
+        <Tooltip>
+          <TooltipTrigger>Hover</TooltipTrigger>
+          <TooltipContent>
+            <p>Add to library</p>
+          </TooltipContent>
+        </Tooltip>
+      </TooltipProvider>
     </div>
   );
 };

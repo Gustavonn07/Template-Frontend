@@ -4,3 +4,6 @@ export * from "./Badge";
 export * from "./Button";
 export * from "./Breadcrumb";
 export * from "./Dialog";
+export * from "./Popover";
+export * from "./Skeleton";
+export * from "./Tooltip";
