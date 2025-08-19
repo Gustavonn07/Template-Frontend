@@ -1,4 +1,4 @@
-import { fakeRequest } from "../../utils/httpClient";
+import { fakeRequest } from "../../utils/fakeRequest";
 import {
   getHttpStatus,
   HttpStatus,

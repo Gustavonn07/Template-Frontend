@@ -1,5 +1,5 @@
 export * from "./cn";
-export * from "./httpClient";
+export * from "./fakeRequest";
 export * from "./helpers/dateHelpers";
 export * from "./helpers/stringHelpers";
 export * from "./helpers/validationsHelpers";
